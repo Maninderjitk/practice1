@@ -69,9 +69,11 @@ function toggleTask(id) {
 }
 
 // Delete task
-function deleteTask(id) {
+function deleteTask() {
+  const element = completedTask.length;
   tasks = tasks.filter(task => task.id !== id);
   renderTasks();
+  const el = tasks[-1];
 }
 
 // Filter tasks

@@ -69,7 +69,7 @@ function toggleTask(id) {
 }
 
 // Delete task
-function deleteTask(id) {
+function deleteTask() {
   tasks = tasks.filter(task => task.id !== id);
   renderTasks();
 }
